@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+body {
+background-image: linear-gradient(to top right, #0c2c54, #4bfcab);
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav {
+height:12%;
+width:100%;
+position: fixed;
+top: 0;
+left: 0;
+backdrop-filter: blur(10px);
+background:rgb(0,0,0, 0.7);
+box-shadow: 0px 10px 40px rgb(0,0,0);
+border-right: 2px solid rgb(255,255,255, 0.09);
+}
+nav img {
+width: auto;
+height: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+z-index: 2;
+}
+.container {
+height: 70%;
+width: 90%;
+background-color:rgb(0,0,0,0.5);
+display: flex;
+justify-content:center;
+align-items:center;
+ border: solid 0.5vw;
+}
+.menu {
+height: 100%;
+width: 33%;
+font-family: 'Oswald';
+font-color: #0c2c54;
+text-align: center;
+}
+.drinks {
+height: 100%;
+width: 33%;
+font-family: 'Oswald';
+font-color: #0c2c54;
+text-align: center;
+border-left: solid 0.5vw;
+border-right:solid 0.5vw;
+}
+.order {
+height: 100%;
+width: 33%;
+font-family: 'Oswald';
+font-color: #0c2c54;
+
+}
+
+input[type=text], input[type=tel], input[type=email],input[type=number],input[type=side],input[type=submit],input[type=food] {
+    margin-bottom:2px;
+    padding: 4px 3px;
+    height: 5%;
+    width:30%;
+    box-sizing: border-box;
+}
+.navLeft {
+      position: absolute;
+      left: 0;
+top: 50%;
+height:10%;
+width:10%;
+font-size: 8vw;
+color: white;
+}
+.navRight {
+position: absolute;
+right: 0;
+top: 50%;
+height:10%;
+width:10%;
+font-size: 8vw;
+color: white;
+}
+textare
+</style>
+</head>
+<nav>
+<img src="images/Logo.png" height="100%" width="22%">
+</nav>
+<body>
+<a href="index.html">
+<div class="navLeft">
+<i class='bx bxs-left-arrow' ></i>
+</div>
+</a>
+<a href="Calendar.html">
+<div class="navRight">
+<i class='bx bxs-right-arrow bx-tada' ></i>
+</div>
+</a>
+<div class="container">
+<div class="menu">
+<h1 style="font-size:3vw;"> Menu </h1> <br>
+<h1 style="font-size:2vw;"> Main Courses </h1> <br>
+<p> Tacos with a side of your choice 16.99$ </p> <br>
+<p> Rice and Beans with Chicken 12.99$ </p> <br>
+<p> Grilled Chicken Sandwhiches 19.99$ </p> <br> 
+<p> Charred Steak with Rice </p> <br>
+</div>
+<div class="drinks">
+<h1 style="font-size:3vw;"> Sides </h1> <br>
+<h1 style="font-size:2vw;"> Drinks </h1> <br>
+<p> Fountain Drinks 2.99$ </p> <br>
+<p> Water 1.99$ </p> <br>
+<p> Sweet Tea 2.99$ </p> <br> 
+<p> Guava Products 3.99$ </p> <br>
+</div>
+<div class="order">
+<center> <h1  style="font-size:3vw;">Food Order Form</h1>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <label for="food">Food:</label>
+    <select id="food" name="food" required>
+      <option value="">Select an option</option>
+      <option value="taco">Tacos</option>
+      <option value="rice">Rice and Beans</option>
+      <option value="chicken">Chicken</option>
+      <option value="steak">Steak</option>
+    </select><br><br>
+
+        <label for="side">Sides:</label>
+    <select id="side" name="side" required>
+      <option value="">Select an option</option>
+      <option value="taco">Rice and a Drink</option>
+      <option value="rice">Fries and a Drink</option>
+      <option value="chicken">Chips and a Drink</option>
+      <option value="steak">Beverage of your choice</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+    </center>
+    
+    <center> <input type="submit" value="Submit"> </center>
+  </form>
+</div>
+</div>
+</body>
